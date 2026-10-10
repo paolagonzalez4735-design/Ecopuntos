@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPuntos | Transformando el Reciclaje Universitario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&display=swap');
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            scroll-behavior: smooth;
+        }
+        
+        h1, .logo-text {
+            font-family: 'Great Vibes', cursive;
+            font-weight: 400;
+        }
+        
+        nav, a, .font-cursive {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+        }
+        
+        h2, h3, h4, h5, h6 {
+            font-family: 'Dancing Script', cursive;
+            /* Aumentamos ligeramente el tamaño visual por la naturaleza de la fuente cursiva */
+            font-size: 1.15em; 
+        }
+
+        .bg-hero {
+            background-color: #ffb3c6;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-[#ffe5ec] text-gray-800">
+
+    <!-- Navegación -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-leaf text-[#a53860] text-3xl mr-2"></i>
+                    <span class="logo-text text-4xl tracking-tight text-[#a53860]">EcoPuntos</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#solucion" class="text-gray-600 hover:text-[#ff8fab] font-semibold">La Solución</a>
+                    <a href="#ods" class="text-gray-600 hover:text-[#ff8fab] font-semibold">ODS</a>
+                    <a href="#clasificacion" class="text-gray-600 hover:text-[#ff8fab] font-semibold">¿Qué reciclamos?</a>
+                    <a href="#negocio" class="text-gray-600 hover:text-[#ff8fab] font-semibold">Plan de Negocio</a>
+                    <a href="#equipo" class="text-gray-600 hover:text-[#ff8fab] font-semibold">Equipo #3</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-hero text-[#a53860] pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-7xl mb-6 leading-tight">Incentivando la Sostenibilidad en la Universidad</h1>
+            <p class="text-xl mb-8 font-medium">Transformamos la gestión de residuos en la Universidad de Guadalajara. Deposita, escanea tu credencial y gana puntos o libera horas de servicio social mientras cuidas el planeta.</p>
+            <a href="#solucion" class="bg-white text-[#ff8fab] font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-50 transition duration-300">Descubre cómo funciona</a>
+        </div>
+    </section>
+
+    <!-- Problema y Solución -->
+    <section id="solucion" class="py-20 px-4 max-w-5xl mx-auto">
+        <div class="flex flex-col items-center text-center">
+            <h2 class="text-3xl font-bold text-[#ff8fab] mb-6">El Problema: La Gestión Ineficiente de Residuos</h2>
+            <p class="text-gray-600 mb-8 text-lg">
+                Diariamente, los campus universitarios generan toneladas de residuos mixtos. La falta de infraestructura inteligente y de motivación en la comunidad estudiantil provoca que materiales reciclables (plásticos), residuos orgánicos y peligrosos desechos electrónicos terminen en vertederos.
+            </p>
+            <h2 class="text-3xl font-bold text-[#ff8fab] mt-4 mb-6">Nuestra Solución: Contenedores Inteligentes</h2>
+            <p class="text-gray-600 text-lg mb-8">
+                <strong>EcoPuntos</strong> es un sistema de hardware y software que incentiva el reciclaje. Nuestros contenedores integran <strong>sensores y APIs de Inteligencia Artificial</strong> para identificar los desechos.
+            </p>
+            
+            <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-[#ff8fab] text-left w-full max-w-2xl">
+                <ul class="list-none space-y-4 text-gray-600 text-lg">
+                    <li><i class="fas fa-check-circle text-[#ff8fab] mr-3"></i> Deposita tu residuo en la máquina.</li>
+                    <li><i class="fas fa-id-card text-blue-500 mr-3"></i> Escanea tu credencial de estudiante (UdeG).</li>
+                    <li><i class="fas fa-coins text-yellow-500 mr-3"></i> La máquina registra la acción en nuestra base de datos (Firebase).</li>
+                    <li><i class="fas fa-clock text-purple-500 mr-3"></i> Acumula "EcoPuntos" o libera horas de servicio social.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ODS Section -->
+    <section id="ods" class="bg-[#ffe5ec] py-16 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-[#ff8fab] mb-10">Impacto y Objetivos de Desarrollo Sostenible (ODS)</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- ODS 13 -->
+                <div class="bg-white p-8 rounded-xl shadow-md max-w-sm card-hover border-b-4 border-[#ff8fab]">
+                    <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-13.jpg" alt="ODS 13" class="w-24 h-24 mx-auto mb-4 rounded">
+                    <h3 class="text-xl font-bold text-[#ff8fab] mb-2">13. Acción por el Clima</h3>
+                    <p class="text-gray-600 text-sm">El eje central de EcoPuntos. Mitigamos la huella de carbono evitando que los residuos generen gases de efecto invernadero en vertederos mediante su correcta gestión y reciclaje.</p>
+                </div>
+                <!-- ODS 12 -->
+                <div class="bg-white p-8 rounded-xl shadow-md max-w-sm card-hover border-b-4 border-[#ff8fab]">
+                    <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-12.jpg" alt="ODS 12" class="w-24 h-24 mx-auto mb-4 rounded">
+                    <h3 class="text-xl font-bold text-[#ff8fab] mb-2">12. Producción y Consumo Responsables</h3>
+                    <p class="text-gray-600 text-sm">Fomentamos la economía circular. Educamos a la comunidad universitaria para separar desde el origen, reintegrando plásticos y electrónicos a la cadena de valor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clasificación de Residuos -->
+    <section id="clasificacion" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-[#ff8fab]">Clasificación en nuestros Contenedores</h2>
+            <p class="text-gray-600 mt-4">Nuestra máquina utiliza un sistema de colores para una separación eficiente.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <!-- Plásticos -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 border-t-8 border-orange-500 card-hover">
+                <i class="fas fa-bottle-water text-5xl text-orange-500 mb-4"></i>
+                <h3 class="text-2xl font-bold text-[#ff8fab] mb-4">Plásticos</h3>
+                <p class="text-sm text-gray-500 mb-4">Diferenciador Naranja</p>
+                <ul class="text-gray-600 space-y-2 text-left bg-orange-50 p-4 rounded-lg">
+                    <li><i class="fas fa-circle text-[8px] text-orange-500 mr-2"></i> Botellas</li>
+                    <li><i class="fas fa-circle text-[8px] text-orange-500 mr-2"></i> Recipientes</li>
+                    <li><i class="fas fa-circle text-[8px] text-orange-500 mr-2"></i> Tapas</li>
+                    <li><i class="fas fa-circle text-[8px] text-orange-500 mr-2"></i> Bolsas</li>
+                </ul>
+            </div>
+            <!-- Biodegradables -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 border-t-8 border-yellow-400 card-hover">
+                <i class="fas fa-apple-whole text-5xl text-yellow-400 mb-4"></i>
+                <h3 class="text-2xl font-bold text-[#ff8fab] mb-4">Biodegradable</h3>
+                <p class="text-sm text-gray-500 mb-4">Diferenciador Amarillo</p>
+                <ul class="text-gray-600 space-y-2 text-left bg-yellow-50 p-4 rounded-lg">
+                    <li><i class="fas fa-circle text-[8px] text-yellow-400 mr-2"></i> Cáscaras (Fruta/Verdura/Huevo)</li>
+                    <li><i class="fas fa-circle text-[8px] text-yellow-400 mr-2"></i> Papel y Cartón</li>
+                    <li><i class="fas fa-circle text-[8px] text-yellow-400 mr-2"></i> Algodón</li>
+                    <li><i class="fas fa-circle text-[8px] text-yellow-400 mr-2"></i> Aserrín</li>
+                </ul>
+            </div>
+            <!-- Electrónicos -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 border-t-8 border-pink-500 card-hover">
+                <i class="fas fa-mobile-screen text-5xl text-pink-500 mb-4"></i>
+                <h3 class="text-2xl font-bold text-[#ff8fab] mb-4">Electrónicos</h3>
+                <p class="text-sm text-gray-500 mb-4">Diferenciador Rosa</p>
+                <ul class="text-gray-600 space-y-2 text-left bg-pink-50 p-4 rounded-lg">
+                    <li><i class="fas fa-circle text-[8px] text-pink-500 mr-2"></i> Teléfonos celulares</li>
+                    <li><i class="fas fa-circle text-[8px] text-pink-500 mr-2"></i> TV's antiguas</li>
+                    <li><i class="fas fa-circle text-[8px] text-pink-500 mr-2"></i> Laptops antiguas</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modelo de Negocio (Canvas a Profundidad) -->
+    <section id="negocio" class="bg-gray-800 text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-[#ff8fab]">Esquema de Modelo de Negocios (Canvas)</h2>
+                <p class="text-gray-300 mt-4">Estructura operativa y viabilidad financiera del proyecto EcoPuntos reflejando de forma exacta los 9 bloques analizados por nuestro equipo.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+                
+                <!-- Bloque 1: Actividades Clave -->
+                <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-[#ff8fab] hover:bg-gray-600 transition-colors duration-300 shadow-lg">
+                    <h4 class="text-lg font-bold text-[#ff8fab] mb-3"><span class="bg-[#ff8fab] text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-xs font-cursive">1</span> Actividades Clave</h4>
+                    <p class="text-gray-300">Identificación y recolección de distintos tipos de desechos.</p>
+                </div>
+
+                <!-- Bloque 2: Propuesta de Valor -->
+                <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-[#ff8fab] hover:bg-gray-600 transition-colors duration-300 shadow-lg">
+                    <h4 class="text-lg font-bold text-[#ff8fab] mb-3"><span class="bg-[#ff8fab] text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-xs font-cursive">2</span> Propuesta de Valor</h4>
+                    <p class="text-gray-300 font-semibold">Incentivar a la comunidad de la Universidad de Guadalajara para administrar mejor los desechos.</p>
+                </div>
+
+                <!-- Bloque 3: Socios Clave -->
+                <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-[#ff8fab] hover:bg-gray-600 transition-colors duration-300 shadow-lg">
+                    <h4 class="text-lg font-bold text-[#ff8fab] mb-3"><span class="bg-[#ff8fab] text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-xs font-cursive">3</span> Socios Clave</h4>
+                    <p class="text-gray-300">Universidades, preparatorias y primarias. <br><br><strong>Aliados Tecnológicos:</strong> Sterew, Firebase, Vercel, APIs de IAs.</p>
+                </div>
+
+                <!-- Bloque 4: Recursos Clave -->
+                <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-[#ff8fab] hover:bg-gray-600 transition-colors duration-300 shadow-lg">
+                    <h4 class="text-lg font-bold text-[#ff8fab] mb-3"><span class="bg-[#ff8fab] text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-xs font-cursive">4</span> Recursos Clave</h4>
+                    <p class="text-gray-300">Electrónica, credencial de estudiantes para guardar los puntos e IAs (Inteligencia Artificial).</p>
+                </div>
+
+                <!-- Bloque 5: Relación con los Clientes -->
+                <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-[#ff8fab] hover:bg-gray-600 transition-colors duration-300 shadow-lg">
+                    <h4 class="text-lg font-bold text-[#ff8fab] mb-3"><span class="bg-[#ff8fab] text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-xs font-cursive">5</span> Relación con Clientes</h4>
+                    <p class="text-gray-300">Sitio web, instituciones asociadas, y recomendaciones entre clientes.</p>
+                </div>
+
+                <!-- Bloque 6: Segmentos de Mercado -->
+                <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-[#ff8fab] hover:bg-gray-600 transition-colors duration-300 shadow-lg">
+                    <h4 class="text-lg font-bold text-[#ff8fab] mb-3"><span class="bg-[#ff8fab] text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-xs font-cursive">6</span> Segmentos de Mercado</h4>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-300">
+                        <li>Las universidades que adquieren el bote.</li>
+                        <li>Usuarios que depositan la basura y liberan horas.</li>
+                        <li>Centros de acopio y recicladoras que compran el material.</li>
+                    </ul>
+                </div>
+
+                <!-- Bloque 7: Distribución / Canales -->
+                <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-[#ff8fab] hover:bg-gray-600 transition-colors duration-300 shadow-lg">
+                    <h4 class="text-lg font-bold text-[#ff8fab] mb-3"><span class="bg-[#ff8fab] text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-xs font-cursive">7</span> Distribución</h4>
+                    <p class="text-gray-300">Redes Sociales, Bootcamp, venta en la página web y en persona con las instituciones.</p>
+                </div>
+
+                <!-- Bloque 8: Estructura de Costes -->
+                <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-[#ff8fab] hover:bg-gray-600 transition-colors duration-300 shadow-lg">
+                    <h4 class="text-lg font-bold text-[#ff8fab] mb-3"><span class="bg-[#ff8fab] text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-xs font-cursive">8</span> Estructura de Costes</h4>
+                    <p class="text-gray-300">Costo por contenedor y mantenimiento, bases de datos y hosting de la plataforma.</p>
+                </div>
+
+                <!-- Bloque 9: Fuentes de Ingresos -->
+                <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-[#ff8fab] hover:bg-gray-600 transition-colors duration-300 shadow-lg">
+                    <h4 class="text-lg font-bold text-[#ff8fab] mb-3"><span class="bg-[#ff8fab] text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-xs font-cursive">9</span> Fuentes de Ingresos</h4>
+                    <p class="text-gray-300">SECHITY, Casa Cem, Greenpeace México, donaciones voluntarias, Empresas ESR, y Banco Interamericano de Desarrollo (BID).</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section id="equipo" class="py-20 px-4 max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-[#ff8fab] mb-4">Los Creadores del Proyecto</h2>
+        <p class="text-[#a53860] font-semibold mb-12 text-lg font-cursive">Equipo #3</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <div class="bg-gray-100 py-3 px-6 rounded-full shadow-sm text-gray-700 font-medium font-cursive">Ángel Payán</div>
+            <div class="bg-gray-100 py-3 px-6 rounded-full shadow-sm text-gray-700 font-medium font-cursive">Paola González</div>
+            <div class="bg-gray-100 py-3 px-6 rounded-full shadow-sm text-gray-700 font-medium 
